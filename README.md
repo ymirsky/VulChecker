@@ -1,7 +1,7 @@
 # VulChecker
 A deep learning model for localizing bugs in C/C++ source code (USENIX'23)
 
-This repo hosts the source code used in the following paper:
+This repo hosts the source code for the method proposed in the following paper:
 
 
 ```
