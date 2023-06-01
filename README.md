@@ -20,7 +20,9 @@ The tool also provides a means for data augmetation: Although many labeld sample
 In this README you will find chapters on the following topics:
 1. Installation instructions
 2. Detailed usage instructions
-3. How to access the assets (datasets, models, VM)
+3. Assets: How to access the assets (datasets, models, VM)
+4. Developer Notes
+5. Acknowledgements
 
 # Installation
 
