@@ -15,10 +15,10 @@ while true; do
 	git clone https://github.com/michaelbrownuc/llap.git
 
 	# install them
-	python -m pip install -U pip setuptools wheel
-	python -m pip install cython cmake
-	python -m pip install ./structure2vec 
-	python -m pip --no-cache-dir install ./VulChecker
+	python3 -m pip install -U pip setuptools wheel
+	python3 -m pip install cython cmake
+	python3 -m pip install ./structure2vec 
+	python3 -m pip --no-cache-dir install ./VulChecker
 
 	# check if path to hector works
 	hector --help
