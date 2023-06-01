@@ -1,0 +1,3 @@
+[console_scripts]
+hector = hector_ml.cli:main
+

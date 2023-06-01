@@ -1,0 +1,1 @@
+These are demo scripts that show you how to perform basic pipeline operations. They have been written for the Ubuntu VM, but should work if run on a Linux machine.
