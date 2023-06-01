@@ -26,7 +26,7 @@ In this README you will find chapters on the following topics:
 
 This tool uses a pipeline of many different components to go from a C/C++ project all the way to a predction from a deep learning model. For example, LLVM with a custom plugin is used to create the ePDGs with any provided labels. Setting up this pipeline is complex and takes a lot of time since LLVM must be compiled. Therefore, instead of performing a clean install (using the instructon below) we provide an Ubuntu VM with VulChecker preinstalled. On the VM's desktop you will find some demo scripts.
 
-The VM can be downloaded from (here)[https://bgu365-my.sharepoint.com/:f:/g/personal/yisroel_bgu_ac_il/Et1JFmXJFFREmBQewk-5GhIBxgFDxNihBYvTR7ZAOsC_Zg?e=btAJzX]. 
+The VM can be downloaded from [here](https://bgu365-my.sharepoint.com/:f:/g/personal/yisroel_bgu_ac_il/Et1JFmXJFFREmBQewk-5GhIBxgFDxNihBYvTR7ZAOsC_Zg?e=btAJzX). 
 Username: vulchecker, Password: vulchecker
 
 
@@ -543,7 +543,7 @@ Structure:
 
 
 ## Models
-The `models/` directory (in this repository)[https://github.com/ymirsky/VulChecker/tree/main/models] contains two set of models
+The `models/` directory [in this repository](https://github.com/ymirsky/VulChecker/tree/main/models) contains two set of models
 - `models/trained_on_aug`: Models trained on augmented samples only (Juliet mixed into 'clean' GitHub Projects)
 - `models/trained_on_aug_and_cve`: Models trained on both augmented samples and CVE samples from Github.
 
@@ -556,7 +556,7 @@ In each of these directories you will find the models organized by CWE (190, 121
 
 ## VM
 As mentioned earlier, you can get immediate access to a fully operational VulChecker by downloading our VM.
-The VM is (hosted on OneDrive)[https://bgu365-my.sharepoint.com/:f:/g/personal/yisroel_bgu_ac_il/Et1JFmXJFFREmBQewk-5GhIBxgFDxNihBYvTR7ZAOsC_Zg?e=btAJzX].
+The VM is [hosted on OneDrive](https://bgu365-my.sharepoint.com/:f:/g/personal/yisroel_bgu_ac_il/Et1JFmXJFFREmBQewk-5GhIBxgFDxNihBYvTR7ZAOsC_Zg?e=btAJzX).
 
 Note 📝: The VM is not configure to use a GPU so model training and execution may be very slow.
 
