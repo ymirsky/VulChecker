@@ -12,7 +12,7 @@ This implimentation supports cmake C/C++ projects only. It can be used to detect
 
 VulChecker is a tool that can precisely locate vulnerabilities in source code (down to the exact instruction) as well as classify their type (CWE). This is useful for developers to locate potential security risks in their code *during* development, even before the project is complete and deployed. The tool converts cmake C/C++ projects into a graph-based program representation called and ePDG. For each potential manifestation point in the project, a subgraph is extracted by crawling the ePDG up from the potential manifestation point. Finally, a graph-based neural network called Structure2Vec is used to classify which subgraphs yeild actual vaulnerabilites. This is repeated for each CWE resulting in seperate a classifiers.  The figure below illustreates how Vulchecker works for a single CWE:
 
-![image](https://github.com/ymirsky/VulChecker/assets/11553515/f5847a74-b6f1-4f1b-b261-97310619a876)
+![image](https://github.com/ymirsky/VulChecker/assets/11553515/794361bf-f336-4d9e-b48a-28a1589c85bb)
 
 The tool also provides a means for data augmetation: Although many labeld samples are required to train a robust model, it is hard to aquire many line-level labeled samples of vulnerabilites from the wild. Therefore, the tool lets you augment the ePDGs of "clean" projects from the wild with the ePDGs of synthetic vulnerbility datasets. In our research, we found that this is enough to train a model to detect vulnerabilites in the wild. However, whenever possible, it is reccomeneded to include real vulnerabilites from the wild in the training data as well.
 
@@ -165,7 +165,7 @@ Important ⚠️: When executing each part of the pipeline, you **must indicate 
 ## Running the Pipeline
 Below is a detailed illustration of how the pipeline is used for a single CWE 'X':
 
-![image](https://github.com/ymirsky/VulChecker/assets/11553515/aee7f7ba-1df8-4fee-a7a5-e3915cbd493d)
+![image](https://github.com/ymirsky/VulChecker/assets/11553515/38b9fa89-d7d3-4bf7-8cfe-5cd7f98ab5c3)
 
 In this dataflow diagram, we show how to (1) setup a training dataset that uses labels from a sythetic vulnerability dataset (e.g., Juliet), (2) evaluate the model on a labeled CVE dataset, and (3) execute other projects from the wild on the same model. Note, although not required, a good model will also use samples from the wild labeled vulnerabilites (and not just sythnthetic vulenrabilites).
 
@@ -230,7 +230,7 @@ Note :memo:: The entire pipeline supports json files compressed using gzip (`*.j
 ### (4) Optional - Create augmented ePDGs
 If you want to make a robust model but only have a few real projects with vulnerabilities, or none at all, then you can perform augmentation. Augmentaton takes the ePDG a real project (assumedly clean of vulnerabilites) and injects labeled vulnerabiles from differnt ePDGs. In our research, we found that the source for can be a sythetic dataset such as [Juliet](https://samate.nist.gov/SARD/test-suites/112). Doing so expands your training data and helps the model better idenitfy vulnerabilites in the wild. The figure below illustrates how an ePDG is augmented with one example of a labeled vulnerable ePDG.
 
-![image](https://github.com/ymirsky/VulChecker/assets/11553515/3ad917db-8b40-4e06-be1e-0f3895956d49)
+![image](https://github.com/ymirsky/VulChecker/assets/11553515/af867247-48ff-4b04-adfd-07803e2ba97a)
 
 To augment a single project you will need to collect all of the ePDGs of the labled projects into a single file, one per line.
 For example, for CWE-121, we can collect samples from the provided Juliet dataset into a single file:
