@@ -513,7 +513,7 @@ There are two folders, `Origional Projects` and `Processed Graphs`:
 
 ### Origional Projects
 We provide the source code to both the Juliet and Wild Labeled (Github with CVE) projects.
-- Juliet can be found on OneDrive [here](https://bgu365-my.sharepoint.com/:f:/g/personal/yisroel_bgu_ac_il/EuvGBQXY-WBIsZcRhYoO1dwBtw4CoQVlWx12BhL_pBdtOg?e=vuyajw_
+- Juliet can be found on OneDrive [here](https://bgu365-my.sharepoint.com/:f:/g/personal/yisroel_bgu_ac_il/EuvGBQXY-WBIsZcRhYoO1dwBtw4CoQVlWx12BhL_pBdtOg?e=vuyajw_)
 - Wild Labeled can be found on OneDrive [here](https://bgu365-my.sharepoint.com/:u:/g/personal/yisroel_bgu_ac_il/EWtBXjeUMyZFoQyh-QudRKkBNQzLnDRLftgavWTOSALIMQ?e=WVbRiG)
 If a project is labeled then it will contain label.json file in its directory. 
 
