@@ -515,6 +515,7 @@ There are two folders, `Origional Projects` and `Processed Graphs`:
 We provide the source code to both the Juliet and Wild Labeled (Github with CVE) projects.
 - Juliet can be found on OneDrive [here](https://bgu365-my.sharepoint.com/:f:/g/personal/yisroel_bgu_ac_il/EuvGBQXY-WBIsZcRhYoO1dwBtw4CoQVlWx12BhL_pBdtOg?e=vuyajw_)
 - Wild Labeled can be found on OneDrive [here](https://bgu365-my.sharepoint.com/:u:/g/personal/yisroel_bgu_ac_il/EWtBXjeUMyZFoQyh-QudRKkBNQzLnDRLftgavWTOSALIMQ?e=WVbRiG)
+  
 If a project is labeled then it will contain label.json file in its directory. 
 
 The Juliet samples have already gone though some preprocessing. Their directory contains a zip of labeled files from the Juliet dataset. Each directory has the contents of a single CVE and includes labeled graphs produced by llap (labeled\_graphs), LLVM IR files (ll_files), preprocessed source files from Juliet (source\_files), and labels produced from comments in the source files (source\_labels). Files that end in `omitgood` correspond to test cases that contain vulnerabilities, while files that end in `omitbad` contain no vulerabilities.
