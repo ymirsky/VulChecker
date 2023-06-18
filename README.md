@@ -507,17 +507,21 @@ For reproducability, we provide the datasets and models used in our paper. The m
 
 ## Datasets
 We provide the cmake projects used in our paper in both source code format, ePDG format, processed as subgraph ePDGs and as the final datasets used to train our models.
-This data can be accessed via OneDrive (The data is currently being uploaded 🕙. Please check back soon!)
+This data can be accessed via OneDrive: source code and processed graphs
 
 There are two folders, `Origional Projects` and `Processed Graphs`:
 
 ### Origional Projects
-Here you will find the source code to both the Juliet and Wild Labeled (Github with CVE) projects. If a project is labeled then it will contain label.json file in its directory. 
+We provide the source code to both the Juliet and Wild Labeled (Github with CVE) projects.
+- Juliet can be found on OneDrive [here](https://bgu365-my.sharepoint.com/:f:/g/personal/yisroel_bgu_ac_il/EuvGBQXY-WBIsZcRhYoO1dwBtw4CoQVlWx12BhL_pBdtOg?e=vuyajw_
+- Wild Labeled can be found on OneDrive [here](https://bgu365-my.sharepoint.com/:u:/g/personal/yisroel_bgu_ac_il/EWtBXjeUMyZFoQyh-QudRKkBNQzLnDRLftgavWTOSALIMQ?e=WVbRiG)
+If a project is labeled then it will contain label.json file in its directory. 
 
 The Juliet samples have already gone though some preprocessing. Their directory contains a zip of labeled files from the Juliet dataset. Each directory has the contents of a single CVE and includes labeled graphs produced by llap (labeled\_graphs), LLVM IR files (ll_files), preprocessed source files from Juliet (source\_files), and labels produced from comments in the source files (source\_labels). Files that end in `omitgood` correspond to test cases that contain vulnerabilities, while files that end in `omitbad` contain no vulerabilities.
 
 ### Processed Graphs
-This directory contains:
+We provide the processed graphs (at differnt levels of prerpocessing). These files can be found on OneDrive [here](https://bgu365-my.sharepoint.com/:f:/g/personal/yisroel_bgu_ac_il/EpTfUBgdSTVGiJm4-GEODUEBFXuOc9xfZHkOIkau--42kA?e=FwxeGW)
+The directory contains:
 
 - All of the ePDG files (before and after subgraph processing) 
 - The paper's final train and test sets (the concatenation of the relevant graphs with downsampling)
