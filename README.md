@@ -60,9 +60,14 @@ git clone https://github.com/ymirsky/VulChecker.git
 git clone https://github.com/gtri/structure2vec.git
 ```
 
-Install them and Cython for optimized graph manipulation:
+The structure2vec library uses networkx which required cmake to be installed on the system. If you don't have it, you should install it now. It is also reccomended to install python3-pip:
+```
+sudo apt install cmake
+sudo apt install python3-pip
+```
+
+Now we can install the python libraries and Cython for optimized graph manipulation:
 ```bash
-# install them
 python3 -m pip install -U pip setuptools wheel
 python3 -m pip install cython cmake
 python3 -m pip install ./structure2vec 
