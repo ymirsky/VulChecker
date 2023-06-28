@@ -14,6 +14,10 @@ while true; do
 	git clone https://github.com/gtri/structure2vec.git
 	git clone https://github.com/michaelbrownuc/llap.git
 
+	# install requite linux libs
+ 	sudo apt install cmake
+	sudo apt install python3-pip
+
 	# install them
 	python3 -m pip install -U pip setuptools wheel
 	python3 -m pip install cython cmake
